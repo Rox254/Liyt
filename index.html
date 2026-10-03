@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Potato Hub</title>
+    <style>
+        /* BASIC CSS STYLING */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf8e3; /* Light, warm background */
+            color: #4a3c2a; /* Dark brown text */
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background-color: #8c7355; /* Earthy brown */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* MAIN HERO SECTION */
+        .hero {
+            background-color: #e2d1a6; /* Lighter beige */
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: #614e38;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 1rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e67e22; /* Potato orange/brown */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        /* INFO SECTIONS */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .info-section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .info-section h3 {
+            color: #8c7355;
+            border-bottom: 2px solid #e2d1a6;
+            padding-bottom: 10px;
+        }
+
+        /* GRID FOR VARIETIES */
+        .variety-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .variety-item {
+            background: #fdfcf5;
+            padding: 15px;
+            border: 1px solid #e2d1a6;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .variety-item h4 {
+            color: #e67e22;
+            margin-top: 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #4a3c2a;
+            color: #e2d1a6;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🥔 PotatoHub</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#varieties">Varieties</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Everything is Better with Potatoes</h2>
+        <p>Your one-stop guide to the world's most versatile, beloved, and delicious tuber. Discover history, varieties, cooking tips, and perfect recipes!</p>
+        <a href="#varieties" class="btn">Explore Varieties</a>
+    </div>
+
+    <div class="container">
+
+        <section id="about" class="info-section">
+            <h3>Why the Humble Potato?</h3>
+            <p>From the Andes to your dinner plate, the potato has a rich history. It’s a staple food globally, providing sustenance and flavor in countless forms: mashed, fried, baked, roasted, and more. Potatoes aren't just delicious; they are also a good source of vitamins, minerals, and complex carbohydrates.</p>
+        </section>
+
+        <section id="varieties" class="info-section">
+            <h3>Popular Potato Varieties</h3>
+            <div class="variety-grid">
+                <div class="variety-item">
+                    <h4>Russet</h4>
+                    <p>Classic baking potato. Floury and light when cooked, perfect for baking and fluffy fries.</p>
+                </div>
+                <div class="variety-item">
+                    <h4>Yukon Gold</h4>
+                    <p>All-purpose potato. Buttery flavor and smooth texture. Great for mashing, boiling, and roasting.</p>
+                </div>
+                <div class="variety-item">
+                    <h4>Red Bliss</h4>
+                    <p>Waxy texture. Holds shape well when cooked. Ideal for boiling, steaming, and potato salads.</p>
+                </div>
+                <div class="variety-item">
+                    <h4>Fingerling</h4>
+                    <p>Small and firm. Unique, often nutty flavor. Beautiful roasted whole or used in salads.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipes" class="info-section">
+            <h3>Featured Potato Recipe: Classic Creamy Mashed</h3>
+            <p><strong>Ingredients:</strong> 2 lbs Yukon Gold potatoes, 1/2 cup butter, 1/2 cup heavy cream (or milk), Salt & Pepper to taste.</p>
+            <p><strong>Instructions:</strong> Peel and cube potatoes. Boil until fork-tender (15-20 mins). Drain well. Mash the potatoes while hot. Stir in butter and cream. Season with salt and pepper. Serve immediately and enjoy!</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PotatoHub Enthusiasts. All spuds reserved.</p>
+    </footer>
+
+</body>
+</html>
